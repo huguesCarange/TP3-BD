@@ -1,0 +1,10 @@
+#:D:\Desktop\tp3_huguesCarange_cedricToupin\src\app.persistence\app.persistence.xproj
+D:\Desktop\tp3_huguesCarange_cedricToupin\src\app.persistence\app.persistence.xproj|D:\Desktop\tp3_huguesCarange_cedricToupin\src\app.domain\app.domain.xproj
+#:D:\Desktop\tp3_huguesCarange_cedricToupin\src\app.IntegrationTests\app.IntegrationTests.xproj
+D:\Desktop\tp3_huguesCarange_cedricToupin\src\app.IntegrationTests\app.IntegrationTests.xproj|D:\Desktop\tp3_huguesCarange_cedricToupin\src\app.domain\app.domain.xproj
+D:\Desktop\tp3_huguesCarange_cedricToupin\src\app.IntegrationTests\app.IntegrationTests.xproj|D:\Desktop\tp3_huguesCarange_cedricToupin\src\app.persistence\app.persistence.xproj
+D:\Desktop\tp3_huguesCarange_cedricToupin\src\app.persistence\app.persistence.xproj|D:\Desktop\tp3_huguesCarange_cedricToupin\src\app.domain\app.domain.xproj
+#:D:\Desktop\tp3_huguesCarange_cedricToupin\src\app.console\app.console.xproj
+D:\Desktop\tp3_huguesCarange_cedricToupin\src\app.console\app.console.xproj|D:\Desktop\tp3_huguesCarange_cedricToupin\src\app.domain\app.domain.xproj
+D:\Desktop\tp3_huguesCarange_cedricToupin\src\app.console\app.console.xproj|D:\Desktop\tp3_huguesCarange_cedricToupin\src\app.persistence\app.persistence.xproj
+D:\Desktop\tp3_huguesCarange_cedricToupin\src\app.persistence\app.persistence.xproj|D:\Desktop\tp3_huguesCarange_cedricToupin\src\app.domain\app.domain.xproj
