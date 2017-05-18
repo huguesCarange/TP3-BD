@@ -5,10 +5,13 @@ using System.Threading.Tasks;
 
 namespace app.domain
 {
-    public interface IClientRepository
+    public interface IClientRepository<T> where T : Entity
     {
-        void Delete(Object obj);
-        void Add(Object obj);
-        void Update(Object obj);
+        IEnumerable<T> GetAll();
+        T GetById(int id);
+
+        void Delete(T entity);
+        void Add(T entity);
+        void Update(T entity);
     }
 }

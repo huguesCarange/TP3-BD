@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace app.persistence
 {
-    public class ClientEntityFrameworkRepository : IClientRepository
+    public class ClientEntityFrameworkRepository<T> : IArtisteRepository<T> where T : Entity
     {
         private readonly DbContext _context;
 
@@ -15,7 +15,7 @@ namespace app.persistence
             _context = dbContext;
         }
 
-        /*public IEnumerable<T> GetAll()
+        public IEnumerable<T> GetAll()
         {
             return _context.Set<T>().ToList();
         }
@@ -23,25 +23,24 @@ namespace app.persistence
         public T GetById(int id)
         {
             return _context.Set<T>().FirstOrDefault(x => x.Id == id);
-        }*/
+        }
 
-        public void Delete(Object entity)
+        public void Delete(T entity)
         {
-            _context.Set<Object>().Remove(entity);
+            _context.Set<T>().Remove(entity);
             _context.SaveChanges();
         }
 
-        public void Add(Object entity)
+        public void Add(T entity)
         {
-            _context.Set<Object>().Add(entity);
+            _context.Set<T>().Add(entity);
             _context.SaveChanges();
         }
 
-        public void Update(Object entity)
+        public void Update(T entity)
         {
-            _context.Set<Object>().Update(entity);
+            _context.Set<T>().Update(entity);
             _context.SaveChanges();
         }
-
     }
 }
