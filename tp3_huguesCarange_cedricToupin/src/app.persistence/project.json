@@ -1,0 +1,45 @@
+{
+  "version": "1.0.0-*",
+
+  "buildOptions": {
+    "emitEntryPoint": true
+  },
+  "frameworks": {
+    "netcoreapp1.0": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "type": "platform",
+          "version": "1.0.1"
+        }
+      }
+    }
+  },
+  "dependencies": {
+    "app.domain": "1.0.0-*",
+    "Microsoft.EntityFrameworkCore.Tools": {
+      "version": "1.0.0-preview2-final",
+      "type": "build"
+    },
+    "Microsoft.Extensions.Configuration": "1.0.0",
+    "Microsoft.Extensions.Configuration.EnvironmentVariables": "1.0.0",
+    "NETStandard.Library": "1.6.0",
+    "Microsoft.EntityFrameworkCore.Sqlite": "1.0.2",
+    "Microsoft.EntityFrameworkCore.Sqlite.Design": {
+        "version": "1.0.2",
+        "type": "build"
+    }
+  },
+  "tools": {
+    "Microsoft.EntityFrameworkCore.Tools": {
+      "version": "1.0.0-preview2-final",
+      "imports": [
+        "portable-net45+win8+dnxcore50",
+        "portable-net45+win8"
+      ]
+    }
+  },
+
+  "tooling": {
+    "defaultNamespace": "webapp.persistence"
+  }
+}
