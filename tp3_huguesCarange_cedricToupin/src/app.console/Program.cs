@@ -12,7 +12,7 @@ namespace app.console
 
             var dbContext = dbContextFactory.Create(new DbContextFactoryOptions());
 
-            var companiesRepositories = new ArtisteEntityFrameworkRepository(dbContext);
+            var companiesRepositories = new ArtisteEntityFrameworkRepository<Entity>(dbContext);
 
         }
     }

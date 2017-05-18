@@ -7,8 +7,8 @@
 -debug:portable
 -nostdlib
 -nologo
-"D:\Desktop\tp3_huguesCarange_cedricToupin\src\app.console\obj\Debug\netcoreapp1.0\dotnet-compile.assemblyinfo.cs"
--out:"D:\Desktop\tp3_huguesCarange_cedricToupin\src\app.console\bin\Debug\netcoreapp1.0\app.console.dll"
+"D:\Documents\GitHub\TP3-BD\tp3_huguesCarange_cedricToupin\src\app.console\obj\Debug\netcoreapp1.0\dotnet-compile.assemblyinfo.cs"
+-out:"D:\Documents\GitHub\TP3-BD\tp3_huguesCarange_cedricToupin\src\app.console\bin\Debug\netcoreapp1.0\app.console.dll"
 -r:"C:\Users\CRG\.nuget\packages\Microsoft.CSharp\4.0.1\ref\netstandard1.0\Microsoft.CSharp.dll"
 -r:"C:\Users\CRG\.nuget\packages\Microsoft.Data.Sqlite\1.0.1\lib\netstandard1.3\Microsoft.Data.Sqlite.dll"
 -r:"C:\Users\CRG\.nuget\packages\Microsoft.EntityFrameworkCore\1.0.2\lib\netstandard1.3\Microsoft.EntityFrameworkCore.dll"
@@ -100,7 +100,7 @@
 -r:"C:\Users\CRG\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll"
 -r:"C:\Users\CRG\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll"
 -r:"C:\Users\CRG\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll"
--r:"D:\Desktop\tp3_huguesCarange_cedricToupin\src\app.domain\bin\Debug\netcoreapp1.0\app.domain.dll"
--r:"D:\Desktop\tp3_huguesCarange_cedricToupin\src\app.persistence\bin\Debug\netcoreapp1.0\app.persistence.dll"
-"D:\Desktop\tp3_huguesCarange_cedricToupin\src\app.console\Program.cs"
-"D:\Desktop\tp3_huguesCarange_cedricToupin\src\app.console\Properties\AssemblyInfo.cs"
+-r:"D:\Documents\GitHub\TP3-BD\tp3_huguesCarange_cedricToupin\src\app.domain\bin\Debug\netcoreapp1.0\app.domain.dll"
+-r:"D:\Documents\GitHub\TP3-BD\tp3_huguesCarange_cedricToupin\src\app.persistence\bin\Debug\netcoreapp1.0\app.persistence.dll"
+"D:\Documents\GitHub\TP3-BD\tp3_huguesCarange_cedricToupin\src\app.console\Program.cs"
+"D:\Documents\GitHub\TP3-BD\tp3_huguesCarange_cedricToupin\src\app.console\Properties\AssemblyInfo.cs"

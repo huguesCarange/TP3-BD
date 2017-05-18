@@ -8,8 +8,8 @@
 -debug:full
 -nostdlib
 -nologo
-"D:\Desktop\tp3_huguesCarange_cedricToupin\src\app.IntegrationTests\obj\Debug\netcoreapp1.0\dotnet-compile.assemblyinfo.cs"
--out:"D:\Desktop\tp3_huguesCarange_cedricToupin\src\app.IntegrationTests\bin\Debug\netcoreapp1.0\app.IntegrationTests.dll"
+"D:\Documents\GitHub\TP3-BD\tp3_huguesCarange_cedricToupin\src\app.IntegrationTests\obj\Debug\netcoreapp1.0\dotnet-compile.assemblyinfo.cs"
+-out:"D:\Documents\GitHub\TP3-BD\tp3_huguesCarange_cedricToupin\src\app.IntegrationTests\bin\Debug\netcoreapp1.0\app.IntegrationTests.dll"
 -r:"C:\Users\CRG\.nuget\packages\Bogus\8.0.3\lib\netstandard1.3\Bogus.dll"
 -r:"C:\Users\CRG\.nuget\packages\Castle.Core\4.0.0-beta002\lib\netstandard1.3\Castle.Core.dll"
 -r:"C:\Users\CRG\.nuget\packages\dotnet-test-xunit\2.2.0-preview2-build1029\lib\netcoreapp1.0\dotnet-test-xunit.dll"
@@ -139,6 +139,6 @@
 -r:"C:\Users\CRG\.nuget\packages\xunit.extensibility.execution\2.2.0-beta2-build3300\lib\netstandard1.0\xunit.execution.dotnet.dll"
 -r:"C:\Users\CRG\.nuget\packages\xunit.runner.reporters\2.2.0-beta2-build3300\lib\netstandard1.1\xunit.runner.reporters.dotnet.dll"
 -r:"C:\Users\CRG\.nuget\packages\xunit.runner.utility\2.2.0-beta2-build3300\lib\netstandard1.1\xunit.runner.utility.dotnet.dll"
--r:"D:\Desktop\tp3_huguesCarange_cedricToupin\src\app.domain\bin\Debug\netcoreapp1.0\app.domain.dll"
--r:"D:\Desktop\tp3_huguesCarange_cedricToupin\src\app.persistence\bin\Debug\netcoreapp1.0\app.persistence.dll"
-"D:\Desktop\tp3_huguesCarange_cedricToupin\src\app.IntegrationTests\ArtisteRepositoryTests.cs"
+-r:"D:\Documents\GitHub\TP3-BD\tp3_huguesCarange_cedricToupin\src\app.domain\bin\Debug\netcoreapp1.0\app.domain.dll"
+-r:"D:\Documents\GitHub\TP3-BD\tp3_huguesCarange_cedricToupin\src\app.persistence\bin\Debug\netcoreapp1.0\app.persistence.dll"
+"D:\Documents\GitHub\TP3-BD\tp3_huguesCarange_cedricToupin\src\app.IntegrationTests\ArtisteRepositoryTests.cs"

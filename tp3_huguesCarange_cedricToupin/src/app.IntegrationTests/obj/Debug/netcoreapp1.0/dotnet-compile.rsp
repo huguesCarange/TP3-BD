@@ -1,5 +1,5 @@
---temp-output:D:\Desktop\tp3_huguesCarange_cedricToupin\src\app.IntegrationTests\obj\Debug\netcoreapp1.0\
---out:D:\Desktop\tp3_huguesCarange_cedricToupin\src\app.IntegrationTests\bin\Debug\netcoreapp1.0\app.IntegrationTests.dll
+--temp-output:D:\Documents\GitHub\TP3-BD\tp3_huguesCarange_cedricToupin\src\app.IntegrationTests\obj\Debug\netcoreapp1.0\
+--out:D:\Documents\GitHub\TP3-BD\tp3_huguesCarange_cedricToupin\src\app.IntegrationTests\bin\Debug\netcoreapp1.0\app.IntegrationTests.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -141,6 +141,6 @@
 --reference:C:\Users\CRG\.nuget\packages\xunit.extensibility.execution\2.2.0-beta2-build3300\lib\netstandard1.0\xunit.execution.dotnet.dll
 --reference:C:\Users\CRG\.nuget\packages\xunit.runner.reporters\2.2.0-beta2-build3300\lib\netstandard1.1\xunit.runner.reporters.dotnet.dll
 --reference:C:\Users\CRG\.nuget\packages\xunit.runner.utility\2.2.0-beta2-build3300\lib\netstandard1.1\xunit.runner.utility.dotnet.dll
---reference:D:\Desktop\tp3_huguesCarange_cedricToupin\src\app.domain\bin\Debug\netcoreapp1.0\app.domain.dll
---reference:D:\Desktop\tp3_huguesCarange_cedricToupin\src\app.persistence\bin\Debug\netcoreapp1.0\app.persistence.dll
-D:\Desktop\tp3_huguesCarange_cedricToupin\src\app.IntegrationTests\ArtisteRepositoryTests.cs
+--reference:D:\Documents\GitHub\TP3-BD\tp3_huguesCarange_cedricToupin\src\app.domain\bin\Debug\netcoreapp1.0\app.domain.dll
+--reference:D:\Documents\GitHub\TP3-BD\tp3_huguesCarange_cedricToupin\src\app.persistence\bin\Debug\netcoreapp1.0\app.persistence.dll
+D:\Documents\GitHub\TP3-BD\tp3_huguesCarange_cedricToupin\src\app.IntegrationTests\ArtisteRepositoryTests.cs

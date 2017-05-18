@@ -114,15 +114,6 @@ namespace app.IntegrationTests
                     NomDeScene = "Sauce"
                 }
             };
-            var artisteToUpdate = new Artiste
-            {
-                Nom = "Carange",
-                Prenom = "Hugues",
-                Telephone = "418-123-1234", //modification ici
-                NAS = "ABC-1D2-1G5",
-                NomDeScene = "Croustillant"
-            };
-            
 
             using (var apiDbContext = _dbContextFactory.Create())
             {
@@ -132,13 +123,13 @@ namespace app.IntegrationTests
 
             //Action
             var artiste = _artisteRepository.GetById(artistesToAdd.ElementAt(0).Id);
-            artiste.Telephone.
-            _artisteRepository.Update(artisteToUpdate);
+            artiste.Telephone.Equals("418-123-1234");
+            _artisteRepository.Update(artiste);
 
             // Assert
             using (var apiDbContext = _dbContextFactory.Create())
             {
-                apiDbContext.Artistes.ToList().First().Equals(artisteToUpdate);
+                apiDbContext.Artistes.ToList().First().Telephone.Equals("418-123-1234");
             }
         }
 
