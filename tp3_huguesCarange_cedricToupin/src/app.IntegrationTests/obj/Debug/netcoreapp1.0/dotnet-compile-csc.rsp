@@ -142,3 +142,4 @@
 -r:"D:\Documents\GitHub\TP3-BD\tp3_huguesCarange_cedricToupin\src\app.domain\bin\Debug\netcoreapp1.0\app.domain.dll"
 -r:"D:\Documents\GitHub\TP3-BD\tp3_huguesCarange_cedricToupin\src\app.persistence\bin\Debug\netcoreapp1.0\app.persistence.dll"
 "D:\Documents\GitHub\TP3-BD\tp3_huguesCarange_cedricToupin\src\app.IntegrationTests\ArtisteRepositoryTests.cs"
+"D:\Documents\GitHub\TP3-BD\tp3_huguesCarange_cedricToupin\src\app.IntegrationTests\ClientRepositoryTests.cs"
