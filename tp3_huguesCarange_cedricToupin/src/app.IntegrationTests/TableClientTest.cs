@@ -12,13 +12,13 @@ using Xunit;
 
 namespace app.IntegrationTests
 {
-    public class ClientRepositoryTests
+    public class TableClientTest
     {
         private ApplicationDbContextFactory _dbContextFactory;
         private readonly DbContextOptionsBuilder<ApplicationDbContext> _dbContextOptionsBuilder;
         private readonly ClientEntityFrameworkRepository<Client> _clientRepository;
 
-        public ClientRepositoryTests()
+        public TableClientTest()
         {
             _dbContextFactory = new ApplicationDbContextFactory();
 
@@ -124,9 +124,97 @@ namespace app.IntegrationTests
             }
         }
 
+        [Fact]
+        public void Delete_ExistingClient_CascadeDeleteAllContrats()
+        {
+            //Arrange
+            var client = new Client()
+            {
+                Nom = "Carange",
+                Prenom = "Hugues",
+                Telephone = "418-123-4567"
+            };
+            var groupe = new Groupe()
+            {
+                Nom = "tro11ll Pistols",
+                Cachet = 10000,
+            };
+            var contrats = new List<Contrat>()
+            {
+                new Contrat()
+                {
+                    Groupe = groupe,
+                    IdGroupe = groupe.Id,
+                    Client = client,
+                    IdClient = client.Id,
+                    DateContrat = new DateTime(2017, 12, 12),
+                    DatePresentation = new DateTime(2017, 11, 11),
+                    HeureDebut = new DateTime(2017, 11, 11, 12, 24, 43),
+                    HeureFin = new DateTime(2017, 11, 11, 12, 24, 44),
+                    Depot = 11334,
+                    Cachet = 2344,
+                    MontantFinal = 23545
+                },
+                 new Contrat()
+                {
+                    Groupe = groupe,
+                    IdGroupe = groupe.Id,
+                    Client = client,
+                    IdClient = client.Id,
+                    DateContrat = new DateTime(2017, 12, 12),
+                    DatePresentation = new DateTime(2017, 11, 11),
+                    HeureDebut = new DateTime(2017, 11, 11, 12, 24, 43),
+                    HeureFin = new DateTime(2017, 11, 11, 12, 24, 44),
+                    Depot = 114,
+                    Cachet = 24,
+                    MontantFinal = 235
+                },
+            };
+            var factures = new List<Facture>()
+            {
+                new Facture()
+                {
+                    DateProduction = new DateTime(2017, 12, 12),
+                    DatePaiement = new DateTime(2017, 11, 11),
+                    ModePaiement = "Comptant",
+                    Contrat = contrats.ElementAt(0),
+                    IdContrat = contrats.ElementAt(0).Id
+                },
+                new Facture()
+                {
+                    DateProduction = new DateTime(2017, 12, 12),
+                    DatePaiement = new DateTime(2017, 11, 11),
+                    ModePaiement = "Comptant",
+                    Contrat = contrats.ElementAt(1),
+                    IdContrat = contrats.ElementAt(1).Id
+                }
+            };
+
+
+            var itemsCountBefore = contrats.Count();
+            using (var apiDbContext = _dbContextFactory.Create())
+            {
+                apiDbContext.Contrats.AddRange(contrats);
+                apiDbContext.Factures.AddRange(factures);
+                apiDbContext.SaveChanges();
+            }
+
+            //Action
+            _clientRepository.Delete(client);
+
+            // Assert
+            using (var apiDbContext = _dbContextFactory.Create())
+            {
+                apiDbContext.Contrats.ToList().Count.Should().Be(0);
+            }
+        }
+
         private void ClearAllTables(ApplicationDbContext dbContext)
         {
             dbContext.Clients.RemoveRange(dbContext.Clients);
+            dbContext.Groupes.RemoveRange(dbContext.Groupes);
+            dbContext.Factures.RemoveRange(dbContext.Factures);
+            dbContext.Contrats.RemoveRange(dbContext.Contrats);
             dbContext.SaveChanges();
         }
     }

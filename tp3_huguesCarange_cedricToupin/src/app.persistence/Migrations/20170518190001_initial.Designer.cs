@@ -8,7 +8,7 @@ using app.persistence;
 namespace app.persistence.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20170518173956_initial")]
+    [Migration("20170518190001_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -13,13 +13,13 @@ using Xunit;
 
 namespace app.IntegrationTests
 {
-    public class ArtisteRepositoryTests
+    public class TableArtisteTest
     {
         private ApplicationDbContextFactory _dbContextFactory;
         private readonly DbContextOptionsBuilder<ApplicationDbContext> _dbContextOptionsBuilder;
         private readonly ArtisteEntityFrameworkRepository<Artiste> _artisteRepository;
 
-        public ArtisteRepositoryTests()
+        public TableArtisteTest()
         {
             _dbContextFactory = new ApplicationDbContextFactory();
 
@@ -166,7 +166,7 @@ namespace app.IntegrationTests
             {
                 new Groupe()
                 {
-                    Nom = "2pac",
+                    Nom = "3pac",
                     Cachet = 100,
                 }
             };
@@ -196,6 +196,7 @@ namespace app.IntegrationTests
 
             using (var apiDbContext = _dbContextFactory.Create())
             {
+                apiDbContext.Artistes.RemoveRange();
                 apiDbContext.Groupes.AddRange(groupeToAdd);
                 apiDbContext.Artistes.AddRange(artistesToAdd);
                 apiDbContext.Membres.AddRange(membresToAdd);
@@ -218,5 +219,6 @@ namespace app.IntegrationTests
             dbContext.Artistes.RemoveRange(dbContext.Artistes);
             dbContext.SaveChanges();
         }
+
     }
 }
