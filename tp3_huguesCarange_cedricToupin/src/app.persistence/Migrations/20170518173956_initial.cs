@@ -46,7 +46,7 @@ namespace app.persistence.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("Autoincrement", true),
-                    Cachet = table.Column<string>(nullable: false),
+                    Cachet = table.Column<int>(nullable: false),
                     Nom = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
@@ -92,7 +92,8 @@ namespace app.persistence.Migrations
                 columns: table => new
                 {
                     IdArtiste = table.Column<int>(nullable: false),
-                    IdGroupe = table.Column<int>(nullable: false)
+                    IdGroupe = table.Column<int>(nullable: false),
+                    Role = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

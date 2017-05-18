@@ -16,5 +16,6 @@ namespace app.domain.Entities
         public int IdGroupe { get; set; }
         public Artiste Artiste { get; set; }
         public Groupe Groupe { get; set; }
+        public string Role { get; set; }
     }
 }

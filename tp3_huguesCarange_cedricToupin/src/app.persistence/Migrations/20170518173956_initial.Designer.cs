@@ -8,7 +8,7 @@ using app.persistence;
 namespace app.persistence.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20170518162929_initial")]
+    [Migration("20170518173956_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -118,8 +118,7 @@ namespace app.persistence.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("Cachet")
-                        .IsRequired();
+                    b.Property<int>("Cachet");
 
                     b.Property<string>("Nom");
 
@@ -136,6 +135,8 @@ namespace app.persistence.Migrations
                     b.Property<int>("IdArtiste");
 
                     b.Property<int>("IdGroupe");
+
+                    b.Property<string>("Role");
 
                     b.HasKey("IdArtiste", "IdGroupe");
 

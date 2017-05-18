@@ -117,8 +117,7 @@ namespace app.persistence.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("Cachet")
-                        .IsRequired();
+                    b.Property<int>("Cachet");
 
                     b.Property<string>("Nom");
 
@@ -135,6 +134,8 @@ namespace app.persistence.Migrations
                     b.Property<int>("IdArtiste");
 
                     b.Property<int>("IdGroupe");
+
+                    b.Property<string>("Role");
 
                     b.HasKey("IdArtiste", "IdGroupe");
 

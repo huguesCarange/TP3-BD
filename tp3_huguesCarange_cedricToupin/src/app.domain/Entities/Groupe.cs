@@ -12,7 +12,7 @@ namespace app.domain.Entities
     {
         public string Nom { get; set; }
         [Required]
-        public string Cachet { get; set; }
+        public int Cachet { get; set; }
         public ICollection<Membre> Membres { get; set; }
         public ICollection<Contrat> Contrats { get; set; }
     }
